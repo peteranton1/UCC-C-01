@@ -7,6 +7,12 @@ This folder contains various implementations of sorting.
 * Selection Sort
 * Merge Sort
 
+Also some other examples
+
+* Binary Search
+* Random Number Game
+
+
 ## How to Run
 
 ### Compile and Run
