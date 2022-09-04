@@ -20,4 +20,4 @@ Also some other examples
     gcc -o d BubbleSort.c
     ./d
 
-    To run other programs replace BubbleSort with other filenames
+To run other programs replace BubbleSort with other filenames
