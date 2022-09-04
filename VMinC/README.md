@@ -16,8 +16,12 @@ This simulates the low level behaviour of a simple stack machine. This is useful
     ./sasm test.sasm
     cp out.bin ../stack-vm
 
-This builds and runs on the file test.sasm which is the source code to assemble. 
-Output file is called out.bin. This file is copied to the ../stack-vm/ folder
+This builds the sasm program and then runs it. 
+
+The sasm program assembles the file test.sasm which is the source code to assemble. 
+Output file is called out.bin. 
+
+This file is copied to the ../stack-vm/ folder
 
 ## Build and Run Stack-VM
 
