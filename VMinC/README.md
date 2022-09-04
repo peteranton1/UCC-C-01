@@ -9,6 +9,11 @@ This simulates the low level behaviour of a simple stack machine. This is useful
 
 ## How to Run
 
+## Build and Run all
+
+    ./run.sh
+    
+
 ## Build and Run SASM
 
     cd sasm/
