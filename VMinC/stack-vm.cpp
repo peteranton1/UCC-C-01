@@ -52,6 +52,21 @@ void StackVM::doPrimative() {
             memory[sp - 1] = memory[sp - 1] + memory[sp];
             sp--;
             break;
+        case 2: // subtract
+            std::cout << "sub " << memory[sp - 1] << " " << memory[sp] << std::endl;
+            memory[sp - 1] = memory[sp - 1] - memory[sp];
+            sp--;
+            break;
+        case 3: // multiplication
+            std::cout << "mul " << memory[sp - 1] << " " << memory[sp] << std::endl;
+            memory[sp - 1] = memory[sp - 1] * memory[sp];
+            sp--;
+            break;
+        case 4: // division
+            std::cout << "div " << memory[sp - 1] << " " << memory[sp] << std::endl;
+            memory[sp - 1] = memory[sp - 1] / memory[sp];
+            sp--;
+            break;
     }
 }
 void StackVM::run() {
