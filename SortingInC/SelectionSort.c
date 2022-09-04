@@ -6,20 +6,20 @@ int main()
 
     int length = 10;
 
-    for (int i = 0; i < length; i++)
+    for (int i = 0; i < length - 1; i++)
     {
-        int max = i;
-        for (int j = i; j < length; j++){
-            if(a[j] < a[max])
+        int min_pos = i;
+        for (int j = i + 1; j < length; j++){
+            if(a[j] < a[min_pos])
             {
-                max = j;
+                min_pos = j;
             }
         }
-        if (a[i] > a[max])
+        if (min_pos != i)
         {
-            int temp = a[max];
-            a[max] = a[i];
-            a[i] = temp;
+            int temp = a[i];
+            a[i] = a[min_pos];
+            a[min_pos] = temp;
         }
     }
 

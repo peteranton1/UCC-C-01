@@ -5,6 +5,7 @@ This folder contains various implementations of sorting.
 
 * Bubble Sort
 * Selection Sort
+* Merge Sort
 
 ## How to Run
 
