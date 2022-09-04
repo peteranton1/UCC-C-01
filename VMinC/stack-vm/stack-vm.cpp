@@ -37,6 +37,7 @@ void StackVM::execute() {
     if (typ == 0 || typ == 2) {
         sp++;
         memory[sp] = dat;
+        std::cout << "push " << memory[sp] << std::endl;
     } else {
         doPrimative();
     }

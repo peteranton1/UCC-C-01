@@ -9,6 +9,20 @@ This simulates the low level behaviour of a simple stack machine. This is useful
 
 ## How to Run
 
-    make
-    ./stack-vm
+## Build and Run SASM
 
+    cd sasm/
+    make
+    ./sasm test.sasm
+    cp out.bin ../stack-vm
+
+This builds and runs on the file test.sasm which is the source code to assemble. 
+Output file is called out.bin. This file is copied to the ../stack-vm/ folder
+
+## Build and Run Stack-VM
+
+    cd ../stack-vm
+    make
+    ./stack-vm out.bin
+
+This loads out.bin which is the binary version of test.sasm and runs the program in the Stack VM. The output appears on screen. 

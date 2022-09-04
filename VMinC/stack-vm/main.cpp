@@ -17,6 +17,7 @@ int main(int argc, char *argv[]) {
 	while (r.read((char*)&i, sizeof(i))) {
 		prog.push_back(i);
 	}
+    prog.push_back(0x40000000); // halt
 
 	StackVM vm;
 	vm.loadProgram(prog);
