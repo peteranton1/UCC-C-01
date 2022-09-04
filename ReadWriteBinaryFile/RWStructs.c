@@ -5,7 +5,7 @@
 
 typedef struct
 {
-    char name[256];
+    char name[20];
     int age;
     double average;
 } Student;
